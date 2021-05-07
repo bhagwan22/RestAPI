@@ -1,0 +1,32 @@
+FOR OAuth - Open Authorization (OAuth) is a standard, token-based protocol for authorization.
+
+OAuth is an open protocol that authorizes a client application to access data from a protected resource through the exchange of tokens. OAuth tokens are essentially permissions given to a client application. The resource server can validate the tokens and allow the client application access to the defined protected resources. 
+
+------------------------------------------------------------------------
+
+FOR OAuth 2.0
+OAuth 2.0 - access token is a session Id
+
+OAuth Endpoint: OAuth endpoints are the URLs that you use to make OAuth authorization requests to Salesforce.
+
+Authorization: i.e end user granted access. "Authorisation code" is used to obtain Access Tokean and Refresh token.
+
+Access Token: Insted of using user's salesforce credential, a connected app can use access token to grant access to resources on behalf of the user.
+
+Authorization Server: 
+The authorization server is the server that authorizes a resource owner.
+
+
+Consumer Key: A consumer uses a key to identify itself to Salesforce. Referred to as client_id in OAuth 2.0.
+
+Consumer Secret : A consumer uses a secret to establish ownership of the consumer key. Referred to as client_secret in OAuth 2.0.
+
+Refresh Token: Only used in OAuth 2.0, a consumer can use a refresh token to obtain a new access token, without having the end user approve the access again.
+----------------------------------------------------------------------
+
+FOR "OAuth 1.0.A"
+OAuth 1.0 - access token must be exchange for session ID
+
+Request Token: Only used in OAuth 1.0.A, a consumer (connected app) can use a request token to obtain authorization from the end user. It exchanges the token for an access token.
+
+Token Secret: A consumer uses this secret to establish ownership of a given token, both for request tokens and access tokens.
