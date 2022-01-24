@@ -1,0 +1,19 @@
+Auth 2.0(no password need to share with client): better then Oauth 1.0 but not secure to share password to client and not way to limit scope or revoke access to individual client.
+_______________________________________________
+AUTHORIZATION STEPS:::::::::::::::::::::::::::
+1.Authorization request from client(app looking for access) to owner(resource owner)/end user 
+2. if successful - return Authrization Grant token
+3. client Authentication request to Authorization server(same or diff then resource server) by presenting Grant token
+4. if successful - return AccessToken(sting contain scope, life etc)
+5. client request to access protected resource with Access Token
+
+# Note:
+ =====
+4 types of grant type(token)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. authorization -> authorization server is b/w client and resource owner. (descripiton: Because the resource owner
+   only authenticates with the authorization server, the resource
+   owner's credentials are never shared with the client.)
+2. implicit
+3. resource owner password credentials
+3. client credentials
